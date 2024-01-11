@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AviaEngineV2Policy>
+    <DepartureTime>
+        <Enabled>false</Enabled>
+        <id_BudgetCode p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <AllowedHoursMin>0</AllowedHoursMin>
+        <AllowedHoursMax>0</AllowedHoursMax>
+    </DepartureTime>
+    <Connections>
+        <Enabled>false</Enabled>
+        <id_BudgetCode p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <MaximumConnectionsValue>0</MaximumConnectionsValue>
+    </Connections>
+    <FlightNumbers>
+        <Enabled>false</Enabled>
+        <id_BudgetCode p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <ForbiddenFlights />
+        <OnlySelectedFlightsAreAllowed>false</OnlySelectedFlightsAreAllowed>
+    </FlightNumbers>
+    <AirplaneTypes>
+        <Enabled>false</Enabled>
+        <id_BudgetCode p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <ForbiddenAirplaneTypes />
+        <OnlySelectedAirplanesAreAllowed>false</OnlySelectedAirplanesAreAllowed>
+    </AirplaneTypes>
+    <Geography>
+        <Enabled>false</Enabled>
+        <id_BudgetCode p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <IsAcceptRule>false</IsAcceptRule>
+    </Geography>
+    <DaysToDeparture>
+        <Enabled>false</Enabled>
+        <id_BudgetCode p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <Days>0</Days>
+        <Rules>
+            <DaysDRule>
+                <id_BudgetCode p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <Days>14</Days>
+            </DaysDRule>
+        </Rules>
+    </DaysToDeparture>
+    <WeekDays>
+        <Enabled>false</Enabled>
+        <id_BudgetCode>1069805</id_BudgetCode>
+        <CheckOnlyFlightDates>false</CheckOnlyFlightDates>
+        <WeekDays>
+            <int>1</int>
+        </WeekDays>
+        <ExactDays />
+    </WeekDays>
+    <AdvancedFareClass>
+        <Enabled>true</Enabled>
+        <id_BudgetCode p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <Routes>
+            <AirRouteClassAllowance>
+                <Origins>ALL</Origins>
+                <Destinations>ALL</Destinations>
+                <id_Code p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <IncludeServiceFee>false</IncludeServiceFee>
+                <id_BudgetCode p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <AllowBusiness>false</AllowBusiness>
+                <AllowEconomy>true</AllowEconomy>
+                <EconomyClassStartHour p5:nil="true"
+                    xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <EconomyClassEndHour p5:nil="true"
+                    xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <BusinessClassStartHour p5:nil="true"
+                    xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <BusinessClassEndHour p5:nil="true"
+                    xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <MinHoursForEconomyClassFlight>0</MinHoursForEconomyClassFlight>
+                <MinHoursTypeForEconomyClassFlight>WithDocking</MinHoursTypeForEconomyClassFlight>
+                <MinHoursForBusinessClassFlight>0</MinHoursForBusinessClassFlight>
+                <MinHoursTypeForBusinessClassFlight>WithDocking</MinHoursTypeForBusinessClassFlight>
+            </AirRouteClassAllowance>
+        </Routes>
+    </AdvancedFareClass>
+    <AdvancedPriceDeviations>
+        <Enabled>true</Enabled>
+        <id_BudgetCode>1069805</id_BudgetCode>
+        <Routes>
+            <AirRoutePriceDeviation>
+                <Origins>!CEE</Origins>
+                <Destinations>!CEE</Destinations>
+                <id_Code p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <IncludeServiceFee>false</IncludeServiceFee>
+                <FixedRubDeviation p5:nil="true"
+                    xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <PercentDeviation>15</PercentDeviation>
+                <CheckBaggage>true</CheckBaggage>
+                <CheckBothDeviation>false</CheckBothDeviation>
+            </AirRoutePriceDeviation>
+            <AirRoutePriceDeviation>
+                <Origins>UCT,LED</Origins>
+                <Destinations>LED,UCT</Destinations>
+                <id_Code p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <IncludeServiceFee>false</IncludeServiceFee>
+                <FixedRubDeviation p5:nil="true"
+                    xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <PercentDeviation p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+                <CheckBaggage>true</CheckBaggage>
+                <CheckBothDeviation>false</CheckBothDeviation>
+            </AirRoutePriceDeviation>
+        </Routes>
+    </AdvancedPriceDeviations>
+    <AdvancedPriceLimits>
+        <Enabled>false</Enabled>
+        <id_BudgetCode p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <Routes />
+    </AdvancedPriceLimits>
+    <ItineraryTypes>
+        <Enabled>false</Enabled>
+        <id_BudgetCode p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <OWProhibited>false</OWProhibited>
+        <RTProhibited>false</RTProhibited>
+    </ItineraryTypes>
+    <BaggageRestriction>
+        <Enabled>false</Enabled>
+        <id_BudgetCode p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <BaggagePermitExt>Permitted</BaggagePermitExt>
+    </BaggageRestriction>
+    <ExchangeRestriction>
+        <Enabled>false</Enabled>
+        <id_BudgetCode p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <ExchangePermit>false</ExchangePermit>
+    </ExchangeRestriction>
+    <RefundRestriction>
+        <Enabled>false</Enabled>
+        <id_BudgetCode p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <RefundPermit>false</RefundPermit>
+    </RefundRestriction>
+    <BookingClassRestriction>
+        <Enabled>false</Enabled>
+        <id_BudgetCode>1069805</id_BudgetCode>
+        <ClassRestrictions />
+    </BookingClassRestriction>
+    <PriorityAirlines>
+        <Enabled>false</Enabled>
+        <id_BudgetCode p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <OnlyPriorityAirlinesAreAllowed>false</OnlyPriorityAirlinesAreAllowed>
+    </PriorityAirlines>
+</AviaEngineV2Policy>
